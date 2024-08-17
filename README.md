@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# About me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Hello There👋🏻 My name is [Ali Jahankah](https://linktr.ee/uaral), a self-taught learner Full-Stack JavaScript Dev based in London. I love Coding, learning new Languages like Python & React Native, Playing Online games, electric guitar, listening to musics and going to the gym. Candlemass, Gojira, Thy Light and Hich are my favourite bands.🤘
 
-## Available Scripts
+### Here is the some simple steps to run this client React/TS project. If you get any errors , bugs or questions, feel free to contact me via:
 
-In the project directory, you can run:
+- [LinkedIn](https://www.linkedin.com/in/uaral/)
+- [GitHub](https://github.com/Ali-Jahankah)
+- [Gmail](mailto:alijahankhah8@gamil.com)
 
-### `npm start`
+### you can also find a few blogs that I've written on Medium website below:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[My blogs on Medium](https://medium.com/@ali-jahankah)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Overview
 
-### `npm test`
+This project is a client-side application built with
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js
+- TypeScript for better type safety
+- react-use-websocket library to fetch and display real-time information from specified endpoints.
+- CSS for the styles
 
-### `npm run build`
+The data is presented in a custom-designed interface, offering detailed insights into various regions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensure you have the following installed on your machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js version 20
+- npm version 10.5
 
-### `npm run eject`
+# Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 1. Clone the Repository
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/Ali-Jahankah/regions-status-client
+cd regions-status-client
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 2. Make Sure of the npm and Node Version
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Ensure you are using Node 20 and npm 10.
 
-## Learn More
+### 3.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Running the Project
+
+You will see that the project will run on port 3000. Make sure your port 3000 is not in use. Also make sure that you are in branch 'master' and to start the server, run:
+
+```bash
+npm start
+```
+
+### Running Tests
+
+It runs the tests using Mocha. To run the tests, make sure you have installed all the dependencies, then run:
+
+```bash
+npm test
+```
