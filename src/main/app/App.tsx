@@ -9,6 +9,7 @@ import React from 'react';
 import RegionPage from '../regionPage/RegionPage';
 
 const App = (): React.ReactElement => {
+  //Adding React Router DOM to enable navigation between pages and update the URL accordingly
   return (
     <Router>
       <main className="app-container">
