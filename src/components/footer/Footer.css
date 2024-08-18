@@ -1,0 +1,11 @@
+.footer {
+  text-align: center;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.143);
+  font-weight: 600;
+}
+.footer a {
+  list-style: none;
+  color: inherit;
+  color: rgb(63, 176, 198);
+}
