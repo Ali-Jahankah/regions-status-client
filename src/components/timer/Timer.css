@@ -1,0 +1,41 @@
+.countdown-timer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.143);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px #00000021;
+}
+.refresh-btn {
+  padding: 0.5em;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.143);
+  border: 1px solid rgba(255, 255, 255, 0.143);
+  margin-left: 0.5em;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+.refresh-btn:hover {
+  transition: all 0.6s;
+  border-color: rgb(0, 241, 76);
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
