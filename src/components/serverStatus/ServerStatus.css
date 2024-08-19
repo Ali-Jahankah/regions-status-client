@@ -1,0 +1,133 @@
+.server-status {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.status-header {
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.status-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: black;
+  text-decoration: underline greenyellow;
+  text-underline-offset: 0.8rem;
+}
+
+.status-header .status {
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.status-header .status.ok {
+  color: white;
+  background-color: green;
+}
+
+.status-header .status.error {
+  color: white;
+  background-color: red;
+}
+.workers-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services,
+.stats,
+.workers {
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.143);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background: rgba(26, 189, 165, 0.317);
+}
+
+table th {
+  background: rgba(26, 189, 165, 0.317);
+  color: black;
+}
+
+table tr:nth-child(even) {
+  background: rgb(255, 238, 0);
+}
+
+.worker-sub-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.worker-sub-table th,
+.worker-sub-table td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+  background: rgba(9, 152, 218, 0.143);
+}
+
+.worker-sub-table th {
+  background: rgba(9, 152, 218, 0.143);
+  color: black;
+}
+
+.worker-sub-table tr:nth-child(even) {
+  background: rgba(34, 34, 34, 0.286);
+}
+
+.worker {
+  margin-bottom: 20px;
+}
+
+.worker h3 {
+  margin-top: 0;
+  color: black;
+}
+.tables-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) {
+  .tables-container {
+    flex-direction: row;
+  }
+  .services,
+  .stats,
+  .strict-issue {
+    width: 45%;
+  }
+}
