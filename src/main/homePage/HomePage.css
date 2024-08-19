@@ -1,3 +1,27 @@
 .homepage-container {
   flex: 1;
+  display: flex;
+  align-items: center;
+}
+.homepage-container div {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: rgba(255, 255, 255, 0.136);
+  box-shadow: 1px 1px 4px 0 rgb(0, 0, 0);
+}
+.homepage-container p {
+  padding: 0.5em;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 600;
 }
