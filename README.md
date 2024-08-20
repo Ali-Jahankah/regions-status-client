@@ -68,6 +68,14 @@ You will see that the project will run on port 3000. Make sure your port 3000 is
 npm start
 ```
 
+# Tests
+
+You can run tests using:
+
+```bash
+npm test
+```
+
 # Deployed project
 
 ### This Front End App is deployed on Render here:
