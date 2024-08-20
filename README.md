@@ -18,10 +18,20 @@ This project is a client-side application built with
 
 - React.js
 - TypeScript for better type safety
-- react-use-websocket library to fetch and display real-time information from specified endpoints.
+- Built in Web Socket to fetch and display real-time information from specified endpoints.
 - CSS for the styles
 
-The data is presented in a custom-designed interface, offering detailed insights into various regions.
+### This is a React/TypeScript project that uses WebSocket to interact with a Node.js server and display live data. State management is handled with Recoil.js, and navigation between pages is managed using React Router DOM.
+
+# Architecture and Efficiency
+
+### The application is designed for efficiency, even with a high number of users. Instead of making multiple API calls from the front end (which could be problematic with, for example, 10,000 users generating 10,000 API calls), a WebSocket connection is established when the user opens the page. Initially, the client receives a complete set of data.
+
+### Users can navigate between different regions by clicking on any region, which updates the state to reflect the data for that specific region.
+
+### A refresh button is provided to allow users to manually refresh the data for all regions. This button can be pressed every 60 seconds. The inclusion of this button is intentional, as not all users may need to see updated data in real-time. By allowing users to refresh data on demand, we save resources and reduce unnecessary data updates.
+
+### To further optimize performance, load balancing or clustering of WebSocket workers can be implemented as needed.
 
 # Prerequisites
 
@@ -43,7 +53,15 @@ cd regions-status-client
 
 Ensure you are using Node 20 and npm 10.
 
-### 3.
+### 3. .ENV file
+
+Create an ENV file in the root where package.json is located, create a variable called "REACT_APP_WS_URL" and add your IPV4 and port there. For example:
+
+```bash
+REACT_APP_WS_URL=ws://192.168.1.25:4000
+```
+
+### 3. Install dependencies
 
 ```bash
 npm install
@@ -55,12 +73,4 @@ You will see that the project will run on port 3000. Make sure your port 3000 is
 
 ```bash
 npm start
-```
-
-### Running Tests
-
-It runs the tests using Mocha. To run the tests, make sure you have installed all the dependencies, then run:
-
-```bash
-npm test
 ```
