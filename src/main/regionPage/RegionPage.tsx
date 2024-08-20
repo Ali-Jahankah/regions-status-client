@@ -5,7 +5,7 @@ import ServerStatus from '../../components/serverStatus/ServerStatus';
 
 const RegionPage: React.FC = (): React.ReactElement => {
   return (
-    <article className="region-container">
+    <article className="region-container" data-testid="server-status">
       <ServerStatus></ServerStatus>
     </article>
   );

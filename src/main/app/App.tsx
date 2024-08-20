@@ -33,9 +33,9 @@ const App: React.FC = (): React.ReactElement => {
       <div className="glass-overlay">
         <Header allData={data} />
         <Routes>
+          <Route path="/" element={<HomePage />}></Route>
           <Route path="/regions/:regionId" element={<RegionPage />}></Route>
           <Route path="/500" element={<CustomError allData={data} />}></Route>
-          <Route path="/" element={<HomePage />}></Route>
           {/* 404 page for all other routes */}
           <Route path="*" element={<NotFound />}></Route>{' '}
         </Routes>

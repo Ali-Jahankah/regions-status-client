@@ -1,10 +1,17 @@
 import { render, screen } from '@testing-library/react';
 
-import React from 'react';
-import RegionPage from './RegionPage';
+import RegionPage from '../regionPage/RegionPage';
 
-test('renders learn react link', () => {
+// Mock ServerStatus component if needed
+jest.mock('../../components/serverStatus/ServerStatus', () => () => (
+  <div data-testid="mock-server-status">Server Status Component</div>
+));
+
+test('renders RegionPage with ServerStatus component', () => {
   render(<RegionPage />);
-  const sectionElement = screen.getByText(/Region/i);
-  expect(sectionElement).toBeInTheDocument();
+
+  const serverStatusElement = screen.getByTestId('server-status');
+  expect(serverStatusElement).toBeInTheDocument();
+
+  expect(screen.getByTestId('mock-server-status')).toBeInTheDocument();
 });
