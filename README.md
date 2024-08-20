@@ -14,13 +14,6 @@
 
 # Overview
 
-This project is a client-side application built with
-
-- React.js
-- TypeScript for better type safety
-- Built in Web Socket to fetch and display real-time information from specified endpoints.
-- CSS for the styles
-
 ### This is a React/TypeScript project that uses WebSocket to interact with a Node.js server and display live data. State management is handled with Recoil.js, and navigation between pages is managed using React Router DOM.
 
 # Architecture and Efficiency
@@ -74,3 +67,9 @@ You will see that the project will run on port 3000. Make sure your port 3000 is
 ```bash
 npm start
 ```
+
+# Deployed project
+
+### This Front End App is deployed on Render here:
+
+[React Project](https://regions-status-client.onrender.com/)
